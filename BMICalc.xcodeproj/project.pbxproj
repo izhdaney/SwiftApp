@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		BBD96C89267E8ADF007F63BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD96C88267E8ADF007F63BC /* AppDelegate.swift */; };
-		BBD96C8B267E8ADF007F63BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD96C8A267E8ADF007F63BC /* SceneDelegate.swift */; };
-		BBD96C8D267E8ADF007F63BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD96C8C267E8ADF007F63BC /* ViewController.swift */; };
 		BBD96C90267E8ADF007F63BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBD96C8E267E8ADF007F63BC /* Main.storyboard */; };
 		BBD96C92267E8AE0007F63BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBD96C91267E8AE0007F63BC /* Assets.xcassets */; };
 		BBD96C95267E8AE0007F63BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBD96C93267E8AE0007F63BC /* LaunchScreen.storyboard */; };
+		BBD96C9D267E92A2007F63BC /* BmiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD96C9C267E92A2007F63BC /* BmiViewController.swift */; };
+		BBD96C9F267E973A007F63BC /* Bmi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD96C9E267E973A007F63BC /* Bmi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BBD96C85267E8ADF007F63BC /* BMICalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMICalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD96C88267E8ADF007F63BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BBD96C8A267E8ADF007F63BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BBD96C8C267E8ADF007F63BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BBD96C8F267E8ADF007F63BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BBD96C91267E8AE0007F63BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBD96C94267E8AE0007F63BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBD96C96267E8AE0007F63BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBD96C9C267E92A2007F63BC /* BmiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BmiViewController.swift; sourceTree = "<group>"; };
+		BBD96C9E267E973A007F63BC /* Bmi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bmi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				BBD96C88267E8ADF007F63BC /* AppDelegate.swift */,
-				BBD96C8A267E8ADF007F63BC /* SceneDelegate.swift */,
-				BBD96C8C267E8ADF007F63BC /* ViewController.swift */,
 				BBD96C8E267E8ADF007F63BC /* Main.storyboard */,
 				BBD96C91267E8AE0007F63BC /* Assets.xcassets */,
 				BBD96C93267E8AE0007F63BC /* LaunchScreen.storyboard */,
 				BBD96C96267E8AE0007F63BC /* Info.plist */,
+				BBD96C9C267E92A2007F63BC /* BmiViewController.swift */,
+				BBD96C9E267E973A007F63BC /* Bmi.swift */,
 			);
 			path = BMICalc;
 			sourceTree = "<group>";
@@ -137,9 +137,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBD96C8D267E8ADF007F63BC /* ViewController.swift in Sources */,
 				BBD96C89267E8ADF007F63BC /* AppDelegate.swift in Sources */,
-				BBD96C8B267E8ADF007F63BC /* SceneDelegate.swift in Sources */,
+				BBD96C9F267E973A007F63BC /* Bmi.swift in Sources */,
+				BBD96C9D267E92A2007F63BC /* BmiViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZR4TQ435L4;
 				INFOPLIST_FILE = BMICalc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +297,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = IlyaZhdaney.BMICalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZR4TQ435L4;
 				INFOPLIST_FILE = BMICalc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +317,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = IlyaZhdaney.BMICalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
