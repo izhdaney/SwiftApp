@@ -12,7 +12,7 @@ class Bmi{
     private var _age:Int
     private var _height:Double
     private var _weight:Double
-    private var _bmi:Double = 0.00
+    private var _bmi:Double
     var isVerify:Bool = false
     var bmiResult:String = ""
     var bmiResultText:String = ""
@@ -23,6 +23,7 @@ class Bmi{
         _age = age
         _height = height
         _weight = weight
+        _bmi = 0.00
     }
     
     public func CaclulateBmi(){
