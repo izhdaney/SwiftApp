@@ -29,13 +29,17 @@ class BmiViewController: UIViewController, UITextFieldDelegate {
     @IBAction func pressCalcBtn(_ sender: UIButton) {
         setupValue()
         let bmi = Bmi(age: _age, height: _height, weight: _weight)
+        bmi.VerifyValue()
+        bmi.CaclulateBmi()
+        bmi.ChangeColorAndText()
+        
         bmiResultValue.text = bmi.bmiResult
         bmiResultText.text = bmi.bmiResultText
         
-        if bmi.Color == 0{
+        if bmi.color == 0{
             bmiResultText.textColor = .red
         }
-        else if (bmi.Color == 1){
+        else if (bmi.color == 1){
             bmiResultText.textColor = .orange
         }
         else{

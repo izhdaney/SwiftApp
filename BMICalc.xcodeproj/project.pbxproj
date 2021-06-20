@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB70B2E4267FB52500139EA9 /* BMICalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB70B2E3267FB52500139EA9 /* BMICalcTests.swift */; };
 		BBD96C89267E8ADF007F63BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD96C88267E8ADF007F63BC /* AppDelegate.swift */; };
 		BBD96C90267E8ADF007F63BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBD96C8E267E8ADF007F63BC /* Main.storyboard */; };
 		BBD96C92267E8AE0007F63BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBD96C91267E8AE0007F63BC /* Assets.xcassets */; };
@@ -15,7 +16,20 @@
 		BBD96C9F267E973A007F63BC /* Bmi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD96C9E267E973A007F63BC /* Bmi.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BB70B2E6267FB52500139EA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBD96C7D267E8ADF007F63BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBD96C84267E8ADF007F63BC;
+			remoteInfo = BMICalc;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		BB70B2E1267FB52500139EA9 /* BMICalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMICalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB70B2E3267FB52500139EA9 /* BMICalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalcTests.swift; sourceTree = "<group>"; };
+		BB70B2E5267FB52500139EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBD96C85267E8ADF007F63BC /* BMICalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMICalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD96C88267E8ADF007F63BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBD96C8F267E8ADF007F63BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -27,6 +41,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BB70B2DE267FB52500139EA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BBD96C82267E8ADF007F63BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +58,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB70B2E2267FB52500139EA9 /* BMICalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB70B2E3267FB52500139EA9 /* BMICalcTests.swift */,
+				BB70B2E5267FB52500139EA9 /* Info.plist */,
+			);
+			path = BMICalcTests;
+			sourceTree = "<group>";
+		};
 		BBD96C7C267E8ADF007F63BC = {
 			isa = PBXGroup;
 			children = (
 				BBD96C87267E8ADF007F63BC /* BMICalc */,
+				BB70B2E2267FB52500139EA9 /* BMICalcTests */,
 				BBD96C86267E8ADF007F63BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				BBD96C85267E8ADF007F63BC /* BMICalc.app */,
+				BB70B2E1267FB52500139EA9 /* BMICalcTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +102,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BB70B2E0267FB52500139EA9 /* BMICalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB70B2EA267FB52500139EA9 /* Build configuration list for PBXNativeTarget "BMICalcTests" */;
+			buildPhases = (
+				BB70B2DD267FB52500139EA9 /* Sources */,
+				BB70B2DE267FB52500139EA9 /* Frameworks */,
+				BB70B2DF267FB52500139EA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB70B2E7267FB52500139EA9 /* PBXTargetDependency */,
+			);
+			name = BMICalcTests;
+			productName = BMICalcTests;
+			productReference = BB70B2E1267FB52500139EA9 /* BMICalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BBD96C84267E8ADF007F63BC /* BMICalc */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBD96C99267E8AE0007F63BC /* Build configuration list for PBXNativeTarget "BMICalc" */;
@@ -96,6 +146,10 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					BB70B2E0267FB52500139EA9 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = BBD96C84267E8ADF007F63BC;
+					};
 					BBD96C84267E8ADF007F63BC = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -115,11 +169,19 @@
 			projectRoot = "";
 			targets = (
 				BBD96C84267E8ADF007F63BC /* BMICalc */,
+				BB70B2E0267FB52500139EA9 /* BMICalcTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BB70B2DF267FB52500139EA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BBD96C83267E8ADF007F63BC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,6 +195,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BB70B2DD267FB52500139EA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB70B2E4267FB52500139EA9 /* BMICalcTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BBD96C81267E8ADF007F63BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,6 +214,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB70B2E7267FB52500139EA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBD96C84267E8ADF007F63BC /* BMICalc */;
+			targetProxy = BB70B2E6267FB52500139EA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BBD96C8E267E8ADF007F63BC /* Main.storyboard */ = {
@@ -165,6 +243,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BB70B2E8267FB52500139EA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZR4TQ435L4;
+				INFOPLIST_FILE = BMICalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IlyaZhdaney.BMICalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BMICalc.app/BMICalc";
+			};
+			name = Debug;
+		};
+		BB70B2E9267FB52500139EA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZR4TQ435L4;
+				INFOPLIST_FILE = BMICalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IlyaZhdaney.BMICalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BMICalc.app/BMICalc";
+			};
+			name = Release;
+		};
 		BBD96C97267E8AE0007F63BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -324,6 +442,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BB70B2EA267FB52500139EA9 /* Build configuration list for PBXNativeTarget "BMICalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB70B2E8267FB52500139EA9 /* Debug */,
+				BB70B2E9267FB52500139EA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BBD96C80267E8ADF007F63BC /* Build configuration list for PBXProject "BMICalc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
