@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BmiViewController: UIViewController {
+class BmiViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var ageValue: UITextField!
     @IBOutlet weak var heightValue: UITextField!
@@ -50,6 +50,10 @@ class BmiViewController: UIViewController {
         _age = Int(ageValue.text!) ?? 0
         _height = Double(heightValue.text!) ?? 0
         _weight = Double(weightValue.text!) ?? 0
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+         self.view.endEditing(true)
     }
     
 }

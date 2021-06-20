@@ -31,6 +31,7 @@ class Bmi{
         VerifyValue()
 
         if isVerify && _age > 18{
+            
             let heightMeter:Double = _height / 100
             _bmi = _weight / (heightMeter * heightMeter)
             _bmi = (_bmi * 100).rounded() / 100
