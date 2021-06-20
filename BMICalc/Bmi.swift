@@ -13,7 +13,7 @@ class Bmi{
     private var _height:Double
     private var _weight:Double
     private var _bmi:Double = 0.00
-    private var isVerify:Bool = false
+    var isVerify:Bool = false
     var bmiResult:String = ""
     var bmiResultText:String = ""
     var Color:Int = 0
@@ -23,12 +23,10 @@ class Bmi{
         _age = age
         _height = height
         _weight = weight
-        CaclulateBmi()
     }
     
-    private func CaclulateBmi(){
+    public func CaclulateBmi(){
         
-        VerifyValue()
 
         if isVerify && _age > 18{
             
@@ -41,11 +39,10 @@ class Bmi{
             _bmi = 0.00
         }
         
-        ChangeColorAndText()
         bmiResult = String(_bmi)
         }
     
-    private func ChangeColorAndText(){
+    public func ChangeColorAndText(){
         if isVerify && _age <= 18{
             bmiResultText = "You must be over 18 years old."
             Color = 0
@@ -72,8 +69,8 @@ class Bmi{
         }
     }
     
-    private func VerifyValue(){
-        if _age != 0 && _weight != 0 && _height != 0{
+    public func VerifyValue(){
+        if _age > 0 && _weight > 0 && _height > 0{
          isVerify = true
         }
         else{
