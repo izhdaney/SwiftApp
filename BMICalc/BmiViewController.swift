@@ -29,6 +29,10 @@ class BmiViewController: UIViewController, UITextFieldDelegate {
     @IBAction func pressCalcBtn(_ sender: UIButton) {
         setupValue()
         let bmi = Bmi(age: _age, height: _height, weight: _weight)
+        bmi.VerifyValue()
+        bmi.CaclulateBmi()
+        bmi.ChangeColorAndText()
+        
         bmiResultValue.text = bmi.bmiResult
         bmiResultText.text = bmi.bmiResultText
         
